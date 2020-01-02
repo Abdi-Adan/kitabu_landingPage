@@ -62,17 +62,35 @@ class AboutUsPage extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          AboutCards(),
-                          AboutCards(),
-                          AboutCards(),
+                          AboutCards(
+                              'SMS Reminders',
+                              "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter... ",
+                              Icons.vibration),
+                          AboutCards(
+                              'Accurate records',
+                              "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter... ",
+                              Icons.book),
+                          AboutCards(
+                              'Consumer Analytics',
+                              "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter... ",
+                              Icons.timeline),
                         ],
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          AboutCards(),
-                          AboutCards(),
-                          AboutCards(),
+                          AboutCards(
+                              'Insurance Policies',
+                              "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter... ",
+                              Icons.account_balance),
+                          AboutCards(
+                              'Loans',
+                              "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter... ",
+                              Icons.monetization_on),
+                          AboutCards(
+                              'Inventory Management',
+                              "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter... ",
+                              Icons.format_align_center),
                         ],
                       ),
                     ],
@@ -88,6 +106,11 @@ class AboutUsPage extends StatelessWidget {
 }
 
 class AboutCards extends StatelessWidget {
+  final String title;
+  final String des;
+  final IconData con;
+
+  const AboutCards(this.title, this.des, this.con);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -108,7 +131,7 @@ class AboutCards extends StatelessWidget {
               alignment: Alignment.center,
               padding: EdgeInsets.all(10.0),
               child: Icon(
-                Icons.fastfood,
+                con,
                 size: 100,
                 color: Color(0xFFf47f07),
               ),
@@ -119,7 +142,7 @@ class AboutCards extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Text(
-                    "Title",
+                    title,
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 22,
@@ -131,7 +154,7 @@ class AboutCards extends StatelessWidget {
                   ),
                   SizedBox(
                     child: Text(
-                      "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter... ",
+                      des,
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 13,
@@ -141,15 +164,15 @@ class AboutCards extends StatelessWidget {
                   SizedBox(
                     height: 8,
                   ),
-                  OutlineButton(
-                    onPressed: () {},
-                    child: Text(
-                      "learn more...",
-                      style: TextStyle(
-                        color: Colors.deepOrange,
-                      ),
-                    ),
-                  ),
+                  // OutlineButton(
+                  //   onPressed: () {},
+                  //   child: Text(
+                  //     "learn more...",
+                  //     style: TextStyle(
+                  //       color: Colors.deepOrange,
+                  //     ),
+                  //   ),
+                  // ),
                 ],
               ),
             ),

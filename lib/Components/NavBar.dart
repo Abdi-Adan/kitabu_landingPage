@@ -17,13 +17,25 @@ class DesktopNavBar extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Text(
-                  "Kitabu Africa",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    fontSize: 30.0,
-                  ),
+                Row(
+                  children: <Widget>[
+                    // Container(
+                    //   decoration: BoxDecoration(
+                    //       borderRadius: BorderRadius.circular(30),
+                    //       color: Colors.transparent),
+                    //   child: Image.asset("assets/kitabulogo.png"),
+                    // ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Text(
+                      "Kitabu MicroFinance Africa",
+                      style: TextStyle(
+                          color: Colors.blueAccent,
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    )
+                  ],
                 ),
                 Row(
                   children: <Widget>[
@@ -48,22 +60,6 @@ class DesktopNavBar extends StatelessWidget {
                       color: Color(0xFFf47f07),
                       child: Text(
                         "About Us",
-                        style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold),
-                      ),
-                      onPressed: () {},
-                      shape: RoundedRectangleBorder(
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(20.0))),
-                    ),
-                    SizedBox(
-                      width: 30,
-                    ),
-                    MaterialButton(
-                      splashColor: Colors.orangeAccent,
-                      color: Color(0xFFf47f07),
-                      child: Text(
-                        "Events & News",
                         style: TextStyle(
                             color: Colors.white, fontWeight: FontWeight.bold),
                       ),

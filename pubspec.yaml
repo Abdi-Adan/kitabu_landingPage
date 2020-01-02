@@ -42,6 +42,10 @@ flutter:
   assets:
     - assets/google.png
     - assets/banner.png
+    - assets/kitabulogo.png
+    - assets/dev.jpg
+    - assets/dev2.jpg
+    - assets/kelvin.jpg
   #  - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

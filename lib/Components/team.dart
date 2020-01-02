@@ -15,9 +15,12 @@ class TeamPage extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              TeamList(),
-              TeamList(),
-              TeamList(),
+              TeamList(Image.asset('assets/dev.jpg'), 'Abdi Adan',
+                  'Mobile developer, Data Scientist'),
+              TeamList(Image.asset('assets/kelvin.jpg'), 'Kelvin Mulama',
+                  'Product designer, Marketting'),
+              TeamList(Image.asset('assets/dev2.jpg'), 'John Simiyu',
+                  'Web, Mobile Developer'),
             ],
           ),
         ),
@@ -27,6 +30,12 @@ class TeamPage extends StatelessWidget {
 }
 
 class TeamList extends StatelessWidget {
+  final Widget image;
+  final String name;
+  final String specialty;
+
+  const TeamList(this.image, this.name, this.specialty);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -36,14 +45,12 @@ class TeamList extends StatelessWidget {
         children: <Widget>[
           CircleAvatar(
             radius: 100,
-            child: Image.asset(
-              "assets/banner.png",
-            ),
+            child: image,
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             child: Text(
-              "data",
+              name,
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 25,
@@ -52,8 +59,7 @@ class TeamList extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-            child: Text(
-                "Developer, Product Designer, \nBsc. Economics and Finance",
+            child: Text(specialty,
                 style: TextStyle(color: Colors.white, fontSize: 20)),
           ),
         ],
