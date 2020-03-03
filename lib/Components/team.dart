@@ -15,12 +15,12 @@ class TeamPage extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              TeamList(Image.asset('assets/dev.jpg'), 'Abdi Adan',
+              TeamList('assets/dev.jpg', 'Abdi Adan',
                   'Mobile developer, Data Scientist'),
-              TeamList(Image.asset('assets/kelvin.jpg'), 'Kelvin Mulama',
+              TeamList('assets/kelvin.jpg', 'Kelvin Mulama',
                   'Product designer, Marketting'),
-              TeamList(Image.asset('assets/dev2.jpg'), 'John Simiyu',
-                  'Web, Mobile Developer'),
+              TeamList(
+                  'assets/dev2.jpg', 'John Simiyu', 'Web, Mobile Developer'),
             ],
           ),
         ),
@@ -30,7 +30,7 @@ class TeamPage extends StatelessWidget {
 }
 
 class TeamList extends StatelessWidget {
-  final Widget image;
+  final String image;
   final String name;
   final String specialty;
 
@@ -43,9 +43,20 @@ class TeamList extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          CircleAvatar(
-            radius: 100,
-            child: image,
+          Container(
+            height: 150.0,
+            width: 150.0,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(
+                Radius.circular(75),
+              ),
+              image: DecorationImage(
+                fit: BoxFit.fill,
+                image: AssetImage(image),
+              ),
+              color: Colors.transparent,
+            ),
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),

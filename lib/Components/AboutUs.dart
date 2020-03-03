@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AboutUsPage extends StatelessWidget {
   @override
@@ -63,16 +64,16 @@ class AboutUsPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           AboutCards(
-                              'SMS Reminders',
-                              "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter... ",
-                              Icons.vibration),
+                              'Kopa Sasa, Lipa Kesho',
+                              "Let your trusted customers buy on credit and pay later. Automate all your debt recording, tracking and Payments with zero confusion and customer arguments. Know when your customers will pay, if they will delay to pay or if they will fail to pay back. Increase your sales by Lending out to new customers with confidence that they will pay back.",
+                              FontAwesomeIcons.gamepad),
                           AboutCards(
-                              'Accurate records',
-                              "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter... ",
-                              Icons.book),
+                              'Inventory Management',
+                              "Save time and money by ordering products at any time via SMS or mobile app, and receive free same-day delivery to your shop. Keep accurate records of purchased products and be aware of your shop’s profit margins.",
+                              Icons.chrome_reader_mode),
                           AboutCards(
                               'Consumer Analytics',
-                              "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter... ",
+                              "Get Access to market trends and purchasing habits of your customers. Get personalized promotions and business insights for new product offerings in the market.",
                               Icons.timeline),
                         ],
                       ),
@@ -80,17 +81,17 @@ class AboutUsPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           AboutCards(
-                              'Insurance Policies',
-                              "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter... ",
-                              Icons.account_balance),
-                          AboutCards(
                               'Loans',
-                              "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter... ",
+                              "Get faster access to loans that can grow or restock your shop at lower interest rates based on sales. Get a consumption loan to buy a product at our partner shops and outlets.",
                               Icons.monetization_on),
                           AboutCards(
-                              'Inventory Management',
-                              "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter... ",
-                              Icons.format_align_center),
+                              'Insurance',
+                              "Avoid total loss by covering every asset that you have against business risks.",
+                              Icons.monetization_on),
+                          AboutCards(
+                              'Jijenge Pole Pole',
+                              "Enroll to a house construction plan. Buy land and construct your own house by making small payments to achieve your construction milestones until when the house is ready. Enroll to purchase products by making small payments at partner Agents and get it delivered there. Set out group purchase or saving targets. Enroll members for the group e.g clubs, social groups, church groups and Chamas. Make and track payments until the target is achieved with zero fraud. Hawkers can enroll their customers to make small payments for their products and deliver them when they finish paying, saving them time and energy. Save for situations such as health and travel emergencies using small payments and get a top up loan in case the emergency occurs and the target is not enough.",
+                              Icons.timeline),
                         ],
                       ),
                     ],

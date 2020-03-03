@@ -3,6 +3,7 @@ import 'package:kitabu_landingPage/Components/AboutUs.dart';
 // import 'package:kitabu_landingPage/Components/Events.dart';
 import 'package:kitabu_landingPage/Components/team.dart';
 
+
 import 'Components/NavBar.dart';
 import 'Components/home.dart';
 

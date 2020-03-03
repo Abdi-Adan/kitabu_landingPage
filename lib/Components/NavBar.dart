@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kitabu_landingPage/Components/team.dart';
 
 class DesktopNavBar extends StatelessWidget {
   @override
@@ -19,19 +20,21 @@ class DesktopNavBar extends StatelessWidget {
               children: <Widget>[
                 Row(
                   children: <Widget>[
-                    // Container(
-                    //   decoration: BoxDecoration(
-                    //       borderRadius: BorderRadius.circular(30),
-                    //       color: Colors.transparent),
-                    //   child: Image.asset("assets/kitabulogo.png"),
-                    // ),
+                    CircleAvatar(
+                      backgroundColor: Colors.white,
+                      child: CircleAvatar(
+                        radius: 20,
+                        backgroundColor: Colors.transparent,
+                        child: Image.asset("assets/kitabulogo.png"),
+                      ),
+                    ),
                     SizedBox(
                       width: 15,
                     ),
                     Text(
-                      "Kitabu MicroFinance Africa",
+                      "Kitabu Africa",
                       style: TextStyle(
-                          color: Colors.blueAccent,
+                          color: Colors.white,
                           fontSize: 17,
                           fontWeight: FontWeight.bold),
                     )
@@ -79,7 +82,10 @@ class DesktopNavBar extends StatelessWidget {
                         style: TextStyle(
                             color: Colors.white, fontWeight: FontWeight.bold),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => TeamPage()));
+                      },
                       shape: RoundedRectangleBorder(
                           borderRadius:
                               BorderRadius.all(Radius.circular(20.0))),
