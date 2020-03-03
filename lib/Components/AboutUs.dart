@@ -72,7 +72,7 @@ class AboutUsPage extends StatelessWidget {
                           AboutCards(
                               'Kopa Leo, Lipa Kesho',
                               "Let your trusted customers buy on credit and pay later. Automate all your debt recording, tracking and Payments with zero confusion and customer arguments. ",
-                              FontAwesomeIcons.gamepad),
+                              FontAwesomeIcons.shoppingBasket),
                           AboutCards(
                               'Inventory Management',
                               "Save time and money by ordering products at any time via SMS or mobile app, and receive free same-day delivery to your shop. Keep accurate records of purchased products and be aware of profit margins.",
@@ -89,15 +89,15 @@ class AboutUsPage extends StatelessWidget {
                           AboutCards(
                               'Loans',
                               "Get faster access to loans that can grow or restock your shop at lower interest rates based on sales. Get a consumption loan to buy a product at our partner shops and outlets.",
-                              Icons.monetization_on),
+                              FontAwesomeIcons.creditCard),
                           AboutCards(
                               'Insurance',
                               "Avoid total loss by covering every asset that you have against business risks.",
-                              Icons.monetization_on),
+                              FontAwesomeIcons.shieldAlt),
                           AboutCards(
                               'Jijenge Pole Pole',
                               "Enroll to a house construction plan. Buy land and construct your own house by making small payments to achieve your construction milestones until when the house is ready. Enroll to purchase products by making small payments at partner Agents. ",
-                              Icons.timeline),
+                              FontAwesomeIcons.building),
                         ],
                       ),
                     ],
@@ -139,7 +139,7 @@ class AboutCards extends StatelessWidget {
               padding: EdgeInsets.all(10.0),
               child: Icon(
                 con,
-                size: 80,
+                size: 65,
                 color: Color(0xfff8a000),
               ),
             ),
