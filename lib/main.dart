@@ -9,10 +9,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Kitabu Africa Landing Page",
+      title: "Kitabu Africa LTD",
       theme: ThemeData(
         primaryColor: Color(0xFF001540),
-        accentColor: Colors.blueAccent,
+        accentColor: Colors.orange,
       ),
       home: MyHomePage(),
     );
